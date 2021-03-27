@@ -24,7 +24,7 @@ public class Foreground extends Service
 
         Intent intent1 = new Intent(this, MainActivity.class);
 
-        PendingIntent pendingIntent = PendingIntent.getActivities(this,0, intent1, 0);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this,0, intent1, 0);
 
         Notification notification = new NotificationCompat.Builder(this,"ChannelId1")
                 .setContentTitle("AppName")
