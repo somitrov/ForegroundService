@@ -1,4 +1,4 @@
-package com.techniyapa.opentalk;
+package com.example.appname;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -12,7 +12,7 @@ import android.os.IBinder;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
-import com.techniyapa.opentalk.View.Main.MainActivity;
+import com.example.appname.View.Main.MainActivity;
 
 public class Foreground extends Service
 {
@@ -27,9 +27,9 @@ public class Foreground extends Service
         PendingIntent pendingIntent = PendingIntent.getActivities(this,0, intent1, 0);
 
         Notification notification = new NotificationCompat.Builder(this,"ChannelId1")
-                .setContentTitle("OpenTalk")
+                .setContentTitle("AppName")
                 .setContentText("Our Application is Running")
-                .setSmallIcon(R.drawable.holala_icon)
+                .setSmallIcon(R.drawable.App_icon)
                 .setContentIntent(pendingIntent).build();
 
 
